@@ -1,0 +1,17 @@
+---
+- my students:
+  - name: ajay
+    address:
+      - street: 10
+      - code: 210
+
+  - name: hari
+    address:
+      - street: 10
+      - code: 210
+
+  - name: pavani
+    address:
+      - street: 10
+      - code: 210
+  
