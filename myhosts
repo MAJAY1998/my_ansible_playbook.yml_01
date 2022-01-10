@@ -2,6 +2,20 @@
 172.31.40.71
 172.31.41.86
 
+{myapplicationserver}
+172.31.40.19
+170.31.41.21
+
+{myDBserver}
+172.31.40.10
+170.31.41.20
+
+{myubuntuserver}
+172.31.40.71
+
+{myredhatserver}
+172.31.41.86
+
 [mywebserver:vars]
 mywebpackforubntu= apache2
 mywebpackforredhat= httpd
