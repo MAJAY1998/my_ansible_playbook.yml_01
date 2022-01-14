@@ -2,4 +2,4 @@
 - hosts: 172.31.40.71
   become: yes
   tasks:
-  - invlude_tasks: myfile.yml
+  - include_tasks: myfile.yml
