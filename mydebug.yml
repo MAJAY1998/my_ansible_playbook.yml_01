@@ -6,9 +6,6 @@
     command: hostname -f
     register: myfirsttaskresult
 
-  - name: i want to display fisrt tasks
-    debug:
-       msg: "{{myfirsttaskresult}}"  
 
   - name: install git
     apt: 
