@@ -13,6 +13,9 @@
     template:
         src: myindex.j2
         dest: /var/www/html/index.html
+    notify: 
+       - restart webserver
+       
     
   - name: download remote files
     get_url:
@@ -25,6 +28,11 @@
       path: /home/ubuntu/myfolder
       state: directory
 
+
+
+
+
+  handlers:
   - name: restart webserver
     service: 
         name: apache2
