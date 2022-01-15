@@ -1,0 +1,27 @@
+--- 
+- hosts: 172.31.40.71
+  become: yes
+  tasks:
+  - name: i want to create a file
+    file:
+      path: /home/maha/file1
+      state: touch
+    notify:
+    -  repeated tasks
+
+
+  - name: i want to create a file
+    file:
+      path: /home/maha/file2
+      state: touch 
+    notify:
+    -  repeated tasks 
+
+
+
+
+  handlers:
+  - name: repeated tasks
+    debug:
+      msg: "{{ansible_os_family}}"
+  
